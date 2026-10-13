@@ -1,5 +1,5 @@
 # fullstack-journey
-My full stack development learning journey  HTML, CSS, JavaScript, Flask, and AI integration. Built alongside my AI Technology degree at FDRE TVET Institute, Addis Ababa.
+My full stack development learning journey  HTML, CSS, JavaScript, Flask, and AI integration. Built alongside my AI Technology degree at Ethiopian Technical Excellence Institute, Addis Ababa.
 # Full Stack Development Journey
 
 I am Birhanu Kassahun, an AI Technology student at FDRE TVET Institute, 
