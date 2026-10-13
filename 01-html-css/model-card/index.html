@@ -10,12 +10,15 @@
             <nav>
                 <ul>
                     <li><a href="#credit-risk">Tabular Credit Risk Predictor</a></li>
+                    <li><a href="#intended-use">Intended Use</a></li>
+                    <li><a href="#training-data">Training Data</a></li>
                 </ul>
                     
             </nav>
         </header>
         <main>
             <section id="credit-risk">
+               <h2>Credit Risk model</h2>
                <article>
                   <h3>Tabular Credit Risk Predictor</h3>
                   <p>A tabular credit risk predictor is a machine learning classifier trained on historical financial data—such as income, debt-to-income ratio, credit history, employment length, and loan amount—to predict whether a loan applicant is likely to default.
@@ -31,6 +34,37 @@ Enterprise finance teams use these models to automate underwriting decisions whi
 
         
             </section>
+            <section id="intended-use">
+                <h2>Intended Use</h2>
+                <article>
+                    <p>The Tabular Credit Risk Predictor is engineered specifically for primary financial institutions to automate preliminary underwriting decisions for individual consumer loan applications. Its primary scope includes estimating default probabilities based on standardized financial parameters—such as debt-to-income (DTI) ratio, credit utilization history, total outstanding liabilities, and verified annual income.
+
+Out-of-Scope Applications: This model is not intended for fully autonomous final rejections without human oversight, nor is it validated for corporate commercial credit, micro-finance micro-loans, or cross-border lending without regional re-calibration.</p>
+                </article>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80" alt="Loan origination data flow and underwriting decision hierarchy diagram">
+                    <figcaption>Figure 2: Automated consumer loan origination and risk evaluation workflow.</figcaption>
+                  </figure>
+            </section>
+            <section id="training-data">
+                  <h2>Training Data & Features</h2>
+                  <article>
+                       <h3>Data Overview</h3>
+                       <p>The Tabular Credit Risk Predictor was trained using a synthetically generated dataset designed to mimic real-world consumer loan portfolios, totaling 250,000 anonymized records. The training data was curated to represent balanced classes (default vs. non-default) and diversified financial behaviors. Key features ingested by the model include:</p>
+                       <h3>Key Model Features</h3>
+                       <ul>
+                          <li><strong>Primary Indicators:</strong>Annual Income, Total Debt, Debt-to-Income (DTI) Ratio.</li>
+                          <li><strong>Historical Factors:</strong>Number of Delinquent Accounts, Length of Credit History, Credit Utilization Rate.</li>
+                          <li><strong>Application Details:</strong>Loan Amount Requested, Employment Length.</li>
+                       </ul>
+                  </article>
+                  <figure>
+                    <img src="assets/images/feature-importance.jpg" alt="Bar chart visualizing model feature importance derived from training data. High impact features like DTI Ratio and Credit History are prominent, next to a summary of the 250,000 record synthetic dataset.">
+                    <figcaption>Figure 3: Feature importance and training data overview for the credit risk model.</figcaption>
+                  </figure>
+                  
+            </section>
+            
         </main>
         
     </body>
