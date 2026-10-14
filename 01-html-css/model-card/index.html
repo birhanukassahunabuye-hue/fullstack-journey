@@ -12,6 +12,8 @@
                     <li><a href="#credit-risk">Tabular Credit Risk Predictor</a></li>
                     <li><a href="#intended-use">Intended Use</a></li>
                     <li><a href="#training-data">Training Data</a></li>
+                    <li><a href="#performance-metrics">Performance Metrics</a></li>
+                    <li><a href="#limitation">Limitation</a></li>
                 </ul>
                     
             </nav>
@@ -63,6 +65,55 @@ Out-of-Scope Applications: This model is not intended for fully autonomous final
                     <figcaption>Figure 3: Feature importance and training data overview for the credit risk model.</figcaption>
                   </figure>
                   
+            </section>
+            <section id="performance-metrics">
+                <h2>Performance Metrics</h2>
+                <article>
+                    <h3>Evaluation Summary</h3>
+                    <p>Model performance was evaluated on a held-out test set of 50,000 consumer records to measure classification accuracy, discrimination capacity, and operational reliability.</p>
+                    <table border="1">
+                        <thead>
+                           <tr>
+                             <th>Metric</th>
+                             <th>Score / Value</th>
+                             <th>Evaluation Description</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>ROC-AUC</strong></td>
+                                <td>0.84</td>
+                                <td>Measures the model's ability to discriminate between defaulting and non-defaulting applicants.</td>
+
+                            </tr>
+                            <tr>
+                                <td><strong>Precision (Default Class)</strong></td>
+                                <td>0.76</td>
+                                <td>Minimizes false positives, ensuring solvent applicants are not wrongfully denied credit.</td>
+                                
+                            </tr>
+                            <tr>
+                                <td><strong>Recall (Sensitivity)</strong></td>
+                                <td>0.68</td>
+                                <td>Captures true default risks to protect the lending institution from severe financial loss.</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </article>
+            </section>
+            <section id="limitation">
+                <h2>Limitations & Ethical Considerations</h2>
+                <article>
+                    <h3>Model Constraints & Risks</h3>
+                    <p>While the Tabular Credit Risk Predictor optimizes underwriting efficiency, deployed systems must account for strict operational constraints:</p>
+                    <ul>
+                        <li><strong>Data Drift:</strong>Economic shifts (e.g., inflation spikes or interest rate changes) can invalidate historical training patterns over time.</li>
+                        <li><strong>Algorithmic Bias:</strong>Historical financial data may reflect systemic socio-economic biases, requiring ongoing disparate impact auditing.</li>
+                        <li><strong>False Negatives vs. Positives:</strong>A false negative results in direct monetary default risk, whereas a false positive denies economic opportunity to creditworthy individuals.</li>
+                    </ul>
+                </article>
+                
             </section>
             
         </main>
