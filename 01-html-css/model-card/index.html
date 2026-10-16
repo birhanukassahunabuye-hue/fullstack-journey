@@ -14,6 +14,7 @@
                     <li><a href="#training-data">Training Data</a></li>
                     <li><a href="#performance-metrics">Performance Metrics</a></li>
                     <li><a href="#limitation">Limitation</a></li>
+                    <li><a href="#inference-tool">Inference Tool</a></li>
                 </ul>
                     
             </nav>
@@ -115,8 +116,49 @@ Out-of-Scope Applications: This model is not intended for fully autonomous final
                 </article>
                 
             </section>
+            <section id="inference-tool">
             
-        </main>
+            
         
+                <form action="http://example.com" method="post">
+                    <fieldset>
+                        <legend>Applicant Financials parameters</legend>
+                        <label for="income">Anual Income ($): </label>
+                        <input type="number" id="income" name="income" required>
+                        <label for="debt">Total Debt ($): </label>
+                        <input type="number" id="debt" name="debt" required>
+                        <label for="employment">Employment Status: </label>
+                        <select id="employment" name="employment" required>
+                           <option value="employed">Employed</option>
+                           <option value="unemployed">Unemployed</option>
+                           <option value="part-time">part-time</option>
+                           <option value="self-employed">Self-Employed</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Loan Request Specifications</legend>
+                        <label for="loan-amount">Requested loan amount ($):</label>
+                        <input type="number" id="loan-amount" name="loan-amount" required>
+                        <label for="credit-history">Credit HIstory Length: </label>
+                        <select id="credit-history" name="credit-history" required>
+                            <option value="lt-2">Less than 2 years</option>
+                            <option value="2-5">2-5 years</option>
+                            <option value="3-5">3-5 years</option>
+                            <option value="5+">5+ years</option>
+
+                        </select>
+                        <label for="purpose">Loan purpose</label>
+                        <select id="purpose" name="purpose" required>
+                            <option value="debt-consolidation">Debt Consolidation</option>
+                            <option value="business">Business Working Capital</option>
+                            <option value="home-improvement">Home Improvement</option>
+
+                        </select>
+                    </fieldset>
+                    <button type="submit">Run Inference Test</button>
+                </form>
+            </section>
+        </main>
     </body>
 </html>
