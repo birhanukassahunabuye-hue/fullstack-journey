@@ -75,9 +75,9 @@ Out-of-Scope Applications: This model is not intended for fully autonomous final
                     <table border="1">
                         <thead>
                            <tr>
-                             <th>Metric</th>
-                             <th>Score / Value</th>
-                             <th>Evaluation Description</th>
+                             <th scope="col">Metric</th>
+                             <th scope="col">Score / Value</th>
+                             <th scope="col">Evaluation Description</th>
                            </tr>
                         </thead>
                         <tbody>
@@ -120,7 +120,7 @@ Out-of-Scope Applications: This model is not intended for fully autonomous final
             
             
         
-                <form action="http://example.com" method="post">
+                <form action="http://example.com" method="post" aria-describedby="inference-tool-description">
                     <fieldset>
                         <legend>Applicant Financials parameters</legend>
                         <label for="income">Anual Income ($): </label>
@@ -157,7 +157,9 @@ Out-of-Scope Applications: This model is not intended for fully autonomous final
                         </select>
                     </fieldset>
                     <button type="submit">Run Inference Test</button>
+                
                 </form>
+                <p id="inference-tool-description">Use the interactive form below to test sample credit parameters against the model.</p>
             </section>
         </main>
     </body>
